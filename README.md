@@ -44,6 +44,8 @@ Start the development server
 npm run dev
 
 ✨ Usage
+
+
 Type a title and content in the input area.
 
 Click "Add" to store the note.
@@ -52,4 +54,7 @@ Click the delete icon to remove any note.
 
 
 🙌 Credits
+
+
+
 Created by Vinayak G Raghu a personal learning project using React and Tailwind CSS.
