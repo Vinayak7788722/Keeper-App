@@ -1,12 +1,55 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 Keeper App
 
-Currently, two official plugins are available:
+A simple and elegant note-taking app inspired by Google Keep — built using **React** and **Tailwind CSS**. Users can add and delete notes with a smooth, minimal UI.
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ App working link----https://delicate-churros-213e1f.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- ✍️ Add notes with a title and content
+- 🗑️ Delete individual notes 
+- ⚡ Smooth user experience with responsive design
+- 🎨 Styled with Tailwind CSS for clean modern look
+- ♻️ React state management using hooks
+
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **Vite** 
+
+---
+
+## 📂 Folder Structure
+src/
+├── components/
+│ ├── Header.jsx
+│ ├── Footer.jsx
+│ ├── Note.jsx
+│ └── CreateArea.jsx
+├── App.jsx
+├── notes.js
+└── index.js
+
+Install dependencies
+npm install
+
+Start the development server
+npm run dev
+
+✨ Usage
+Type a title and content in the input area.
+
+Click "Add" to store the note.
+
+Click the delete icon to remove any note.
+
+
+🙌 Credits
+Created by Vinayak G Raghu a personal learning project using React and Tailwind CSS.
