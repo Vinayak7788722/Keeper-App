@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "./footer";
-import Header from "./header";
+import Header from "./Header";
 import Note from "./note";
 import CreateArea from "./CreateArea";
 
