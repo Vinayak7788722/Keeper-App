@@ -8,43 +8,42 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
-    setNotes(prevNotes => {
-      return [...prevNotes, newNote];
-    });
+    setNotes(prevNotes => [...prevNotes, newNote]);
   }
 
   function deleteNote(id) {
-    setNotes(prevNotes => {
-      return prevNotes.filter((noteItem, index) => {
-        return index !== id;
-      });
-    });
+    setNotes(prevNotes => prevNotes.filter((_, index) => index !== id));
+  }
+
+  function editNote(id, updatedNote) {
+    setNotes(prevNotes =>
+      prevNotes.map((note, index) =>
+        index === id ? updatedNote : note
+      )
+    );
   }
 
   return (
     <>
       <Header />
-       
-         {/* Main middle section */}
+
+      {/* Main middle section */}
       <div className="min-h-screen bg-black text-white px-4 py-6">
-
-      <CreateArea onAdd={addNote} />
-       <div>
-      {notes.map((noteItem, index) => {
-        return (
-          <Note
-            key={index}
-            id={index}
-            title={noteItem.title}
-            content={noteItem.content}
-            onDelete={deleteNote}
-          />
-        );
-      })}
-
-
+        <CreateArea onAdd={addNote} />
+        <div>
+          {notes.map((noteItem, index) => (
+            <Note
+              key={index}
+              id={index}
+              title={noteItem.title}
+              content={noteItem.content}
+              onDelete={deleteNote}
+              onEdit={editNote}
+            />
+          ))}
         </div>
       </div>
+
       <Footer />
     </>
   );
