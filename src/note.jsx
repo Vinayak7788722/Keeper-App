@@ -70,7 +70,7 @@ function Note(props) {
               onClick={() => setIsEditing(true)}
               className="bg-yellow-500 hover:bg-yellow-600 text-white px-2 py-1 rounded"
             >
-              Edit
+              Update
             </button>
             <button
               onClick={handleDelete}
